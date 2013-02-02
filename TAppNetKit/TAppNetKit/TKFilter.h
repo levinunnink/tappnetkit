@@ -7,7 +7,7 @@
 //
 
 #import "TKIdentifiedResource.h"
-#import "ANCompletions.h"
+#import "TKCompletions.h"
 
 @class TKDraftFilter;
 @class TKDraftFilterClause;

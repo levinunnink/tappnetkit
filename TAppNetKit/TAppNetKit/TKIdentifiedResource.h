@@ -7,7 +7,7 @@
 //
 
 #import "TKResource.h"
-#import "ANDefines.h"
+#import "TKDefines.h"
 
 @interface TKIdentifiedResource : TKResource
 

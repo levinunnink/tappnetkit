@@ -1,5 +1,5 @@
 //
-//  ANSession.m
+//  TKSession.m
 //  AppNetKit
 //
 //  Created by Brent Royal-Gordon on 8/18/12.
@@ -7,7 +7,7 @@
 //
 
 #import "TKSession.h"
-#import "ANSession+ANResource_Private.h"
+#import "TKSession+TKResource_Private.h"
 #import "_TKIdentifiedResourceSet.h"
 
 const TKResourceID ANMeUserID = 0;
@@ -46,7 +46,7 @@ NSInteger NetworkActivityCount;
 - (id)init {
     if((self = [super init])) {
         _resourceSet = [_TKIdentifiedResourceSet new];
-        _resourceUniquingQueue = dispatch_queue_create("ANSession resource uniquing queue", DISPATCH_QUEUE_SERIAL);
+        _resourceUniquingQueue = dispatch_queue_create("TKSession resource uniquing queue", DISPATCH_QUEUE_SERIAL);
     }
     return self;
 }
@@ -116,7 +116,7 @@ static TKSession * DefaultSession = nil;
     if(rep) {
         TKPost * post = [[TKPost alloc] initWithRepresentation:rep session:self];
         
-        // We touch these internal resources to make sure they're updated immediately (triggering an ANResourceDidUpdateNotification).
+        // We touch these internal resources to make sure they're updated immediately (triggering an TKResourceDidUpdateNotification).
         [post repostOf];
         [post user];
         
@@ -133,7 +133,7 @@ static TKSession * DefaultSession = nil;
         for(NSDictionary * postRep in rep) {
             TKPost * post = [[TKPost alloc] initWithRepresentation:postRep session:self];
             
-            // We touch these internal resources to make sure they're updated immediately (triggering an ANResourceDidUpdateNotification).
+            // We touch these internal resources to make sure they're updated immediately (triggering an TKResourceDidUpdateNotification).
             [post repostOf];
             [post user];
             

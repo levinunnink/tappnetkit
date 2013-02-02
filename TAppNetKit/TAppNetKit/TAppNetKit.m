@@ -13,6 +13,6 @@
 #endif
 
 NSString * const TKErrorDomain = @"TKErrorDomain";
-NSString * const TKExplTKationURLKey = @"TKExplTKationURL";
+NSString * const TKExplanationURLKey = @"TKExplTKationURL";
 NSString * const TKPasswordErrorTitleKey = @"error_title";
 NSString * const TKPasswordErrorTextKey = @"error_text";

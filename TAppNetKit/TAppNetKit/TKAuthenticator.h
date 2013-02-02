@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 
 // Use an array of these constants to specify the scopes you want to request.
 extern NSString * const TKScopeStream;

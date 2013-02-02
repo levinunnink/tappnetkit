@@ -11,7 +11,7 @@
 #import "TKDefines.h"
 
 extern NSString * const TKErrorDomain;
-extern NSString * const TKExplTKationURLKey;
+extern NSString * const TKExplanationURLKey;
 
 // Used with password auth
 extern NSString * const TKPasswordErrorTitleKey;
@@ -61,7 +61,7 @@ typedef enum {
 #import "TKUser.h"
 #import "TKPost.h"
 #import "TKFilter.h"
-#import "TKTKnotation.h"
+#import "TKAnnotation.h"
 #import "TKEntity.h"
 #import "TKSource.h"
 #import "TKDraft.h"

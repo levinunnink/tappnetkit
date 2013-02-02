@@ -1,5 +1,5 @@
 //
-//  ANResource+Magic.m
+//  TKResource+Magic.m
 //  AppNetKit
 //
 //  Created by Brent Royal-Gordon on 8/22/12.
@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 #import "NSObject+AssociatedObject.h"
 
-// This category is responsible for ANResource's magically appearing accessors.
+// This category is responsible for TKResource's magically appearing accessors.
 //
 // The short version is that, when Objective-C detects that you're trying to call a getter that doesn't exist, it calls +resolveInstanceMethod:, passing in the name of the getter it's looking for. We then calculate the .representation key corresponding to that property name, look up that property's type, and install an appropriate block under the getter's name.
 //
@@ -21,9 +21,9 @@
 //   - NSTimeZone
 //   - NSLocale
 //   - NSURL
-//   - ANResource subclasses
+//   - TKResource subclasses
 // - BOOL
-// - ANResourceID (in the form of unsigned long long)
+// - TKResourceID (in the form of unsigned long long)
 // - NSUInteger (in the form of unsigned long and unsigned int)
 // 
 // Add a type in ANBlockForGetterReturningType.
@@ -133,7 +133,7 @@ static id ANBlockForGetterReturningType(NSString * name, NSString * propType) {
                 
                 if(!object) {
                     object = [self.representation objectForKey:key];
-                    object = [ANResource.dateFormatter dateFromString:object];
+                    object = [TKResource.dateFormatter dateFromString:object];
                     
                     [self setAssociatedObject:object forKey:_cmd];
                 }
@@ -162,7 +162,7 @@ static id ANBlockForGetterReturningType(NSString * name, NSString * propType) {
         else if([class isSubclassOfClass:TKResource.class]) {
             SEL _cmd = NSSelectorFromString(name);
             
-            return ^ANResource*(TKResource * self) {
+            return ^TKResource*(TKResource * self) {
                 id object = [self associatedObjectForKey:_cmd];
                 
                 if(!object) {
@@ -197,7 +197,7 @@ static id ANBlockForGetterReturningType(NSString * name, NSString * propType) {
                 object = [self.representation objectForKey:key];
                 
                 if([object isKindOfClass:NSString.class]) {
-                    object = [ANResource.IDFormatter numberFromString:object];
+                    object = [TKResource.IDFormatter numberFromString:object];
                 }
                 
                 [self setAssociatedObject:object forKey:_cmd];

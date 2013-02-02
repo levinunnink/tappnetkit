@@ -85,11 +85,11 @@ static CGFloat ImageScale = 0.0;
         [params setObject:[NSNumber numberWithDouble:size.height] forKey:@"h"];
     }
     
-    ANMutableRequest * req = [[ANMutableRequest alloc] initWithSession:self.session];
+    TKMutableRequest * req = [[TKMutableRequest alloc] initWithSession:self.session];
     
     req.URL = self.URL;
     req.parameters = params;
-    req.method = ANRequestMethodGet;
+    req.method = TKRequestMethodGet;
     
     [req sendRequestWithDataCompletion:^(NSData *body, NSError *error) {
         if(!body) {

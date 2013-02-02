@@ -49,7 +49,7 @@
     
     self.replyTo = ANUnspecifiedPostID;
     if([dict objectForKey:@"reply_to"]) {
-        self.replyTo = [ANResource.IDFormatter numberFromString:[dict objectForKey:@"reply_to"]].unsignedLongLongValue;
+        self.replyTo = [TKResource.IDFormatter numberFromString:[dict objectForKey:@"reply_to"]].unsignedLongLongValue;
     }
     
     [self.annotations removeAllObjects];

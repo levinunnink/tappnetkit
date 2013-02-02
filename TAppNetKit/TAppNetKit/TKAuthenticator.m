@@ -7,7 +7,7 @@
 //
 
 #import "TKAuthenticator.h"
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 #import "NSDictionary+Parameters.h"
 #import "TKRequest.h"
 
@@ -75,13 +75,13 @@ NSString * const TKScopeExport = @"export";
     
     dispatch_once(&once, ^{
         singleton = [NSDictionary dictionaryWithObjectsAndKeys:
-                     [NSNumber numberWithInteger:ANOAuthInvalidRequestError], @"invalid_request",
-                     [NSNumber numberWithInteger:ANOAuthUnauthorizedClientError], @"unauthorized_client",
-                     [NSNumber numberWithInteger:ANOAuthAccessDeniedError], @"access_denied",
-                     [NSNumber numberWithInteger:ANOAuthUnsupportedResponseTypeError], @"unsupported_response_type",
-                     [NSNumber numberWithInteger:ANOAuthInvalidScopeError], @"invalid_scope",
-                     [NSNumber numberWithInteger:ANOAuthServerError], @"server_error",
-                     [NSNumber numberWithInteger:ANOAuthTemporarilyUnavailableError], @"temporarily_unavailable",                     
+                     [NSNumber numberWithInteger:TKOAuthInvalidRequestError], @"invalid_request",
+                     [NSNumber numberWithInteger:TKOAuthUnauthorizedClientError], @"unauthorized_client",
+                     [NSNumber numberWithInteger:TKOAuthAccessDeniedError], @"access_denied",
+                     [NSNumber numberWithInteger:TKOAuthUnsupportedResponseTypeError], @"unsupported_response_type",
+                     [NSNumber numberWithInteger:TKOAuthInvalidScopeError], @"invalid_scope",
+                     [NSNumber numberWithInteger:TKOAuthServerError], @"server_error",
+                     [NSNumber numberWithInteger:TKOAuthTemporarilyUnavailableError], @"temporarily_unavailable",                     
                      nil];
     });
     
@@ -89,7 +89,7 @@ NSString * const TKScopeExport = @"export";
 
 }
 
-- (ANErrorCode)errorCodeForDictionary:(NSDictionary*)dict {
+- (TKErrorCode)errorCodeForDictionary:(NSDictionary*)dict {
     NSString * errCodeString = [dict objectForKey:@"error"];
     
     return [[self.errorCodeDictionary objectForKey:errCodeString] integerValue];
@@ -103,10 +103,10 @@ NSString * const TKScopeExport = @"export";
     }
     
     if(error) {
-        *error = [NSError errorWithDomain:ANErrorDomain code:[self errorCodeForDictionary:dict] userInfo:
+        *error = [NSError errorWithDomain:TKErrorDomain code:[self errorCodeForDictionary:dict] userInfo:
                   [NSDictionary dictionaryWithObjectsAndKeys:
                    [[dict objectForKey:@"error_description"] stringByReplacingOccurrencesOfString:@"+" withString:@" "], NSLocalizedDescriptionKey,
-                   [NSURL URLWithString:[dict objectForKey:@"error_uri"]], ANExplanationURLKey,
+                   [NSURL URLWithString:[dict objectForKey:@"error_uri"]], TKExplanationURLKey,
                    nil]];
     }
     
@@ -117,11 +117,11 @@ NSString * const TKScopeExport = @"export";
     NSAssert(self.clientID, @"ANAuthenticator.clientID not set");
     NSAssert(self.passwordGrantSecret, @"You must set ANAuthenticator.passwordGrantSecret before calling -%@", NSStringFromSelector(_cmd));
     
-    ANMutableRequest *authRequest = [[ANMutableRequest alloc] initWithSession:ANSession.defaultSession];
+    TKMutableRequest *authRequest = [[TKMutableRequest alloc] initWithSession:TKSession.defaultSession];
     
     authRequest.URL = [NSURL URLWithString:@"https://alpha.app.net/oauth/access_token"];
-    authRequest.method = ANRequestMethodPost;
-    authRequest.parameterEncoding = ANRequestParameterEncodingURL;
+    authRequest.method = TKRequestMethodPost;
+    authRequest.parameterEncoding = TKRequestParameterEncodingURL;
     authRequest.parameters = [NSDictionary dictionaryWithObjectsAndKeys:@"password", @"grant_type", self.clientID, @"client_id", self.passwordGrantSecret, @"password_grant_secret", username, @"username", password, @"password", [self parameterForScopes:scopes], @"scope", nil];
 
     [authRequest sendRequestWithRepresentationCompletion:^(TKResponse *response, id rep, NSError *error) {
@@ -138,13 +138,13 @@ NSString * const TKScopeExport = @"export";
                 [userInfo setObject:error forKey:NSUnderlyingErrorKey];
                 
                 if (errorText) { 
-                    [userInfo setObject:errorText forKey:ANPasswordErrorTextKey];
+                    [userInfo setObject:errorText forKey:TKPasswordErrorTextKey];
                 }
                 if (errorTitle) {
-                    [userInfo setObject:errorText forKey:ANPasswordErrorTitleKey];
+                    [userInfo setObject:errorText forKey:TKPasswordErrorTitleKey];
                 }
 
-                error = [NSError errorWithDomain:ANErrorDomain code:ANGenericError userInfo:userInfo];
+                error = [NSError errorWithDomain:TKErrorDomain code:TKGenericError userInfo:userInfo];
             }
 
             if (completion) {

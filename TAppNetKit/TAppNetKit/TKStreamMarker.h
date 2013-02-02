@@ -7,8 +7,8 @@
 //
 
 #import "TKResource.h"
-#import "ANDefines.h"
-#import "ANCompletions.h"
+#import "TKDefines.h"
+#import "TKCompletions.h"
 
 extern const NSUInteger TKStreamMarkerUnspecifiedPercentage;
 @class TKDraftStreamMarker;

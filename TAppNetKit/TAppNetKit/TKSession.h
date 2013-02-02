@@ -1,5 +1,5 @@
 //
-//  ANSession.h
+//  TKSession.h
 //  AppNetKit
 //
 //  Created by Brent Royal-Gordon on 8/18/12.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 
 @class TKUser;
 @class TKPost;
@@ -24,7 +24,7 @@ typedef enum {
     ANStreamAPIVersion0
 } ANStreamAPIVersion;
 
-// NOTE: Most of the methods you'll actually want to use are implemented in the Requests category (ANSession+Requests.h).
+// NOTE: Most of the methods you'll actually want to use are implemented in the Requests category (TKSession+Requests.h).
 
 @interface TKSession : NSObject
 
@@ -50,4 +50,4 @@ typedef enum {
 
 @end
 
-#import "ANSession+Requests.h"
+#import "TKSession+Requests.h"

@@ -19,7 +19,7 @@
 }
 
 - (TKRequestMethod)method {
-    return ANRequestMethodPost;
+    return TKRequestMethodPost;
 }
 
 - (void)sendRequestWithCompletion:(TKPostRequestCompletion)completion {

@@ -7,7 +7,7 @@
 //
 
 #import "TKRequest.h"
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 #import "NSDictionary+Parameters.h"
 
 @interface TKRequest ()
@@ -27,7 +27,7 @@
 }
 
 - (id)mutableCopyWithZone:(NSZone *)zone {
-    ANMutableRequest * req = [[ANMutableRequest alloc] initWithSession:self.session];
+    TKMutableRequest * req = [[TKMutableRequest alloc] initWithSession:self.session];
     
     req.URL = self.URL;
     req.parameters = self.parameters;
@@ -41,16 +41,16 @@
 
 - (NSString*)methodString {
     switch (self.method) {
-        case ANRequestMethodGet:
+        case TKRequestMethodGet:
             return @"GET";
             
-        case ANRequestMethodPost:
+        case TKRequestMethodPost:
             return @"POST";
             
-        case ANRequestMethodDelete:
+        case TKRequestMethodDelete:
             return @"DELETE";
             
-        case ANRequestMethodPut:
+        case TKRequestMethodPut:
             return @"PUT";
             
         default:
@@ -60,7 +60,7 @@
 }
 
 - (NSURL *)fullURL {
-    if(self.method != ANRequestMethodGet) {
+    if(self.method != TKRequestMethodGet) {
         return self.URL;
     }
     
@@ -72,12 +72,12 @@
     return [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", self.URL.absoluteString, params.queryString]];
 }
 
-- (ANRequestParameterEncoding)parameterEncoding {
-    return ANRequestParameterEncodingJSON;
+- (TKRequestParameterEncoding)parameterEncoding {
+    return TKRequestParameterEncodingJSON;
 }
 
 - (NSData *)body {
-    if(self.method == ANRequestMethodGet) {
+    if(self.method == TKRequestMethodGet) {
         return nil;
     }
     
@@ -90,11 +90,11 @@
     NSError * error = nil;
 
     switch (self.parameterEncoding) {
-        case ANRequestParameterEncodingURL:
+        case TKRequestParameterEncodingURL:
             data = params.formBodyData;
             break;
 
-        case ANRequestParameterEncodingJSON:
+        case TKRequestParameterEncodingJSON:
         default:
             data = [NSJSONSerialization dataWithJSONObject:params options:0 error:&error];
             NSAssert(data, @"Params could not be serialized to JSON--error: %@", error.localizedDescription);
@@ -105,11 +105,11 @@
 }
 
 - (NSError*)errorForHTTPRequest:(NSURLRequest*)req response:(NSHTTPURLResponse*)res {
-    if(res.statusCode < ANBadRequestError) {
+    if(res.statusCode < TKBadRequestError) {
         return nil;
     }
     
-    return [NSError errorWithDomain:ANErrorDomain code:res.statusCode userInfo:nil];
+    return [NSError errorWithDomain:TKErrorDomain code:res.statusCode userInfo:nil];
 }
 
 - (NSMutableURLRequest *)URLRequest {
@@ -119,11 +119,11 @@
     
     if(req.HTTPBody) {
         switch (self.parameterEncoding) {
-            case ANRequestParameterEncodingURL:
+            case TKRequestParameterEncodingURL:
                 [req setValue:@"application/x-www-form-urlencoded; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
                 break;
                 
-            case ANRequestParameterEncodingJSON:
+            case TKRequestParameterEncodingJSON:
             default:
                 [req setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
                 break;
@@ -133,7 +133,7 @@
     return req;
 }
 
-- (NSString*)pathWithFormat:(NSString*)format userID:(ANResourceID)ID {
+- (NSString*)pathWithFormat:(NSString*)format userID:(TKResourceID)ID {
     NSString * IDString = @"me";
     if(ID != ANMeUserID) {
         IDString = [NSString stringWithFormat:@"%lld", ID];
@@ -180,7 +180,7 @@
     }];
 }
 
-- (id)dataRepresentationForRepresentation:(id)rep response:(ANResponse**)response {
+- (id)dataRepresentationForRepresentation:(id)rep response:(TKResponse**)response {
     if(![rep isKindOfClass:NSDictionary.class]) {
         *response = nil;
         return rep;
@@ -191,16 +191,16 @@
         return rep;
     }
     
-    *response = [[ANResponse alloc] initWithRepresentation:[rep objectForKey:@"meta"] session:self.session];
+    *response = [[TKResponse alloc] initWithRepresentation:[rep objectForKey:@"meta"] session:self.session];
     return [rep objectForKey:@"data"];
 }
 
-- (void)sendRequestWithRepresentationCompletion:(void (^)(ANResponse *, id, NSError *))completion {
+- (void)sendRequestWithRepresentationCompletion:(void (^)(TKResponse *, id, NSError *))completion {
     [self sendRequestWithDataCompletion:^(NSData *body, NSError *error) {
         NSError * jsonError;
         id json = body == nil ? nil : [NSJSONSerialization JSONObjectWithData:body options:0 error:&jsonError];
         
-        ANResponse * response;
+        TKResponse * response;
         json = [self dataRepresentationForRepresentation:json response:&response];
         
         if(!error) {
@@ -228,7 +228,7 @@
 
 @end
 
-@implementation ANMutableRequest
+@implementation TKMutableRequest
 
 @synthesize URL, parameters, method, parameterEncoding;
 

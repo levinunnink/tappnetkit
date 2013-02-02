@@ -1,5 +1,5 @@
 //
-//  ANResource+Magic.h
+//  TKResource+Magic.h
 //  AppNetKit
 //
 //  Created by Brent Royal-Gordon on 8/22/12.

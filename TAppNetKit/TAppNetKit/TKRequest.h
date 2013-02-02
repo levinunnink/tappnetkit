@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 
 @class TKSession;
 
@@ -44,9 +44,9 @@ typedef enum {
 
 @end
 
-// ANMutableRequest (and ANMutableAuthenticatedRequest) allow you to change the URL, parameters, and method.
+// TKMutableRequest (and ANMutableAuthenticatedRequest) allow you to change the URL, parameters, and method.
 // This is more a means of doing completely custom requests than customizing an existing request.
-@interface ANMutableRequest : TKRequest
+@interface TKMutableRequest : TKRequest
 
 @property (readwrite,strong) NSURL * URL;
 @property (readwrite,strong) NSDictionary * parameters;

@@ -7,7 +7,7 @@
 //
 
 #import "TKStreamMarker.h"
-#import "ANSession+Requests.h"
+#import "TKSession+Requests.h"
 
 const NSUInteger TKStreamMarkerUnspecifiedPercentage = 0;
 
@@ -56,7 +56,7 @@ const NSUInteger TKStreamMarkerUnspecifiedPercentage = 0;
     
     [rep setObject:self.name forKey:@"name"];
     if(self.postID) {
-        [rep setObject:[ANResource.IDFormatter stringFromNumber:[NSNumber numberWithUnsignedLongLong:self.postID]] forKey:@"id"];
+        [rep setObject:[TKResource.IDFormatter stringFromNumber:[NSNumber numberWithUnsignedLongLong:self.postID]] forKey:@"id"];
     }
     if(self.percentage) {
         [rep setObject:[NSString stringWithFormat:@"%d", self.percentage] forKey:@"percentage"];
@@ -67,7 +67,7 @@ const NSUInteger TKStreamMarkerUnspecifiedPercentage = 0;
 
 - (void)setRepresentation:(NSDictionary *)rep {
     self.name = [rep objectForKey:@"name"];
-    self.postID = [[ANResource.IDFormatter numberFromString:[rep objectForKey:@"id"]] unsignedLongLongValue];
+    self.postID = [[TKResource.IDFormatter numberFromString:[rep objectForKey:@"id"]] unsignedLongLongValue];
     self.percentage = [[rep objectForKey:@"percentage"] integerValue];
 }
 

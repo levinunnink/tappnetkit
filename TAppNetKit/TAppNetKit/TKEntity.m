@@ -321,7 +321,7 @@ const NSRange ANEntityNoRange = (NSRange){ NSNotFound, 0 };
         [rep setObject:self.name forKey:@"name"];
     }
     if(self.userID != 0) {
-        [rep setObject:[ANResource.IDFormatter stringFromNumber:[NSNumber numberWithUnsignedLongLong:self.userID]]  forKey:@"id"];
+        [rep setObject:[TKResource.IDFormatter stringFromNumber:[NSNumber numberWithUnsignedLongLong:self.userID]]  forKey:@"id"];
     }
     if(!NSEqualRanges(self.range, ANEntityNoRange)) {
         [rep setObject:[NSString stringWithFormat:@"%d", self.range.location] forKey:@"pos"];
@@ -334,7 +334,7 @@ const NSRange ANEntityNoRange = (NSRange){ NSNotFound, 0 };
 - (void)setRepresentation:(NSDictionary *)rep {
     self.URL = [NSURL URLWithString:[rep objectForKey:@"url"]];
     self.name = [rep objectForKey:@"name"];
-    self.userID = [[ANResource.IDFormatter numberFromString:[rep objectForKey:@"id"]] unsignedLongLongValue];
+    self.userID = [[TKResource.IDFormatter numberFromString:[rep objectForKey:@"id"]] unsignedLongLongValue];
     
     if([rep objectForKey:@"pos"]) {
         self.range = NSMakeRange([[rep objectForKey:@"pos"] integerValue], [[rep objectForKey:@"len"] integerValue]);

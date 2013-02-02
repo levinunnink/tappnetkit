@@ -11,7 +11,7 @@
 @implementation TKUnfollowUserRequest
 
 - (TKRequestMethod)method {
-    return ANRequestMethodDelete;
+    return TKRequestMethodDelete;
 }
 
 @end

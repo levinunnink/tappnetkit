@@ -19,7 +19,7 @@
 }
 
 - (TKRequestMethod)method {
-    return ANRequestMethodGet;
+    return TKRequestMethodGet;
 }
 
 - (void)sendRequestWithCompletion:(TKUserRequestCompletion)completion {
@@ -27,9 +27,9 @@
     
     [self sendRequestWithRepresentationCompletion:^(TKResponse * response, id rep, NSError *error) {
         if(!rep) {
-            if(error.code == ANNotFoundError && [error.domain isEqualToString:ANErrorDomain]) {
+            if(error.code == TKNotFoundError && [error.domain isEqualToString:TKErrorDomain]) {
                 NSString * message = [NSString stringWithFormat:NSLocalizedString(@"%@ has not been registered by an App.net user.", @""), username.appNetUsernameString];
-                error = [NSError errorWithDomain:ANErrorDomain code:ANNotFoundError userInfo:@{ NSLocalizedDescriptionKey: message, NSUnderlyingErrorKey: error }];
+                error = [NSError errorWithDomain:TKErrorDomain code:TKNotFoundError userInfo:@{ NSLocalizedDescriptionKey: message, NSUnderlyingErrorKey: error }];
             }
         }
         [self.session completeUserRequest:completion withResponse:response representation:rep error:error];

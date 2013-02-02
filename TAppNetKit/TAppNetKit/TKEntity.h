@@ -7,7 +7,7 @@
 //
 
 #import "TKResource.h"
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 
 extern const NSRange ANEntityNoRange;
 

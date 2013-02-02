@@ -19,7 +19,7 @@
 }
 
 - (TKRequestMethod)method {
-    return ANRequestMethodGet;
+    return TKRequestMethodGet;
 }
 
 + (BOOL)requiresAccessToken {

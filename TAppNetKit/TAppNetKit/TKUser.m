@@ -7,7 +7,7 @@
 //
 
 #import "TKUser.h"
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 
 NSString * TKUserTypeToString(TKUserType type) {
     static NSDictionary * table;
@@ -15,10 +15,10 @@ NSString * TKUserTypeToString(TKUserType type) {
     
     dispatch_once(&once, ^{
         table = [NSDictionary dictionaryWithObjectsAndKeys:
-                 @"human", [NSNumber numberWithInteger:ANUserTypeHuman],
-                 @"bot", [NSNumber numberWithInteger:ANUserTypeBot],
-                 @"corporate", [NSNumber numberWithInteger:ANUserTypeCorporate],
-                 @"feed", [NSNumber numberWithInteger:ANUserTypeFeed],
+                 @"human", [NSNumber numberWithInteger:TKUserTypeHuman],
+                 @"bot", [NSNumber numberWithInteger:TKUserTypeBot],
+                 @"corporate", [NSNumber numberWithInteger:TKUserTypeCorporate],
+                 @"feed", [NSNumber numberWithInteger:TKUserTypeFeed],
                  nil];
     });
     
@@ -31,10 +31,10 @@ TKUserType TKUserTypeFromString(NSString * string) {
     
     dispatch_once(&once, ^{
         table = [NSDictionary dictionaryWithObjectsAndKeys:
-                 [NSNumber numberWithInteger:ANUserTypeHuman], @"human",
-                 [NSNumber numberWithInteger:ANUserTypeBot], @"bot",
-                 [NSNumber numberWithInteger:ANUserTypeCorporate], @"corporate",
-                 [NSNumber numberWithInteger:ANUserTypeFeed], @"feed", 
+                 [NSNumber numberWithInteger:TKUserTypeHuman], @"human",
+                 [NSNumber numberWithInteger:TKUserTypeBot], @"bot",
+                 [NSNumber numberWithInteger:TKUserTypeCorporate], @"corporate",
+                 [NSNumber numberWithInteger:TKUserTypeFeed], @"feed", 
                  nil];
     });
     

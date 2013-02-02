@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B38228F16BCF91900181E35 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B38228E16BCF91900181E35 /* CoreLocation.framework */; };
 		6B8333D416BCE947005F7102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D316BCE947005F7102 /* UIKit.framework */; };
 		6B8333D616BCE947005F7102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D516BCE947005F7102 /* Foundation.framework */; };
 		6B8333D816BCE947005F7102 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D716BCE947005F7102 /* CoreGraphics.framework */; };
@@ -97,6 +98,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B38228E16BCF91900181E35 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B8333CF16BCE947005F7102 /* TAppNetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAppNetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8333D316BCE947005F7102 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6B8333D516BCE947005F7102 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,7 +128,7 @@
 		6B83340F16BCE966005F7102 /* TKAuthenticatedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAuthenticatedRequest.m; sourceTree = "<group>"; };
 		6B83341016BCE966005F7102 /* TKAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAuthenticator.h; sourceTree = "<group>"; };
 		6B83341116BCE966005F7102 /* TKAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAuthenticator.m; sourceTree = "<group>"; };
-		6B83341216BCE966005F7102 /* ANCompletions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCompletions.h; sourceTree = "<group>"; };
+		6B83341216BCE966005F7102 /* TKCompletions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCompletions.h; sourceTree = "<group>"; };
 		6B83341316BCE966005F7102 /* TKCreateFilterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreateFilterRequest.h; sourceTree = "<group>"; };
 		6B83341416BCE966005F7102 /* TKCreateFilterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreateFilterRequest.m; sourceTree = "<group>"; };
 		6B83341516BCE966005F7102 /* TKCreatePostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreatePostRequest.h; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B38228F16BCF91900181E35 /* CoreLocation.framework in Frameworks */,
 				6B8333D416BCE947005F7102 /* UIKit.framework in Frameworks */,
 				6B8333D616BCE947005F7102 /* Foundation.framework in Frameworks */,
 				6B8333D816BCE947005F7102 /* CoreGraphics.framework in Frameworks */,
@@ -283,7 +286,7 @@
 		6B38228D16BCF56D00181E35 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				6B83341216BCE966005F7102 /* ANCompletions.h */,
+				6B83341216BCE966005F7102 /* TKCompletions.h */,
 				6B83341716BCE966005F7102 /* TKDefines.h */,
 				6B83345616BCE966005F7102 /* TKSession.h */,
 				6B83345716BCE966005F7102 /* TKSession.m */,
@@ -320,6 +323,7 @@
 		6B8333D216BCE947005F7102 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B38228E16BCF91900181E35 /* CoreLocation.framework */,
 				6B8333D316BCE947005F7102 /* UIKit.framework */,
 				6B8333D516BCE947005F7102 /* Foundation.framework */,
 				6B8333D716BCE947005F7102 /* CoreGraphics.framework */,

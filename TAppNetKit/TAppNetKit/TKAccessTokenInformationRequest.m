@@ -20,7 +20,7 @@
 }
 
 - (TKRequestMethod)method {
-    return ANRequestMethodGet;
+    return TKRequestMethodGet;
 }
 
 - (void)sendRequestWithCompletion:(TKAccessTokenInformationRequestCompletion)completion {

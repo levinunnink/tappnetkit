@@ -10,7 +10,7 @@
 #import "ISO8601DateFormatter.h"
 
 // Sent when the resource is updated; the resource is the object, and there is no userInfo.
-extern NSString * const ANResourceDidUpdateNotification;
+extern NSString * const TKResourceDidUpdateNotification;
 
 @class TKSession;
 @class TKEntitySet;

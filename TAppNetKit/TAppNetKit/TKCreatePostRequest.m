@@ -7,7 +7,7 @@
 //
 
 #import "TKCreatePostRequest.h"
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 #import "NSDictionary+dictionaryWithObjectsForKeys.h"
 
 @implementation TKCreatePostRequest
@@ -21,7 +21,7 @@
 }
 
 - (TKRequestMethod)method {
-    return ANRequestMethodPost;
+    return TKRequestMethodPost;
 }
 
 - (void)sendRequestWithCompletion:(TKPostRequestCompletion)completion {

@@ -1,12 +1,12 @@
 //
-//  ANSession_ANResource_Private.h
+//  TKSession_TKResource_Private.h
 //  AppNetKit
 //
 //  Created by Brent Royal-Gordon on 8/23/12.
 //  Copyright (c) 2012 Architechies. See README.md for licensing information.
 //
 
-// This header declares private details of ANSession and ANResource that they use to manage each other.
+// This header declares private details of TKSession and TKResource that they use to manage each other.
 // No user serviceable parts inside.
 
 #import "TKSession.h"

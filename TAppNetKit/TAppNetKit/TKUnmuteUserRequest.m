@@ -11,7 +11,7 @@
 @implementation TKUnmuteUserRequest
 
 - (TKRequestMethod)method {
-    return ANRequestMethodDelete;
+    return TKRequestMethodDelete;
 }
 
 @end

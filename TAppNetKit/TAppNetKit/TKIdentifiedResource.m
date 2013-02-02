@@ -8,7 +8,7 @@
 
 #import "TKIdentifiedResource.h"
 #import "TKSession.h"
-#import "ANSession+ANResource_Private.h"
+#import "TKSession+TKResource_Private.h"
 
 @implementation TKIdentifiedResource
 

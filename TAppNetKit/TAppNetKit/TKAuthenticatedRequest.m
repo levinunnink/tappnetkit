@@ -7,12 +7,12 @@
 //
 
 #import "TKAuthenticatedRequest.h"
-#import "AppNetKit.h"
+#import "TAppNetKit.h"
 
 @implementation TKAuthenticatedRequest
 
 - (id)mutableCopyWithZone:(NSZone *)zone {
-    ANMutableRequest * req = [[ANMutableRequest alloc] initWithSession:self.session];
+    TKMutableRequest * req = [[TKMutableRequest alloc] initWithSession:self.session];
     
     req.URL = self.URL;
     req.parameters = self.parameters;

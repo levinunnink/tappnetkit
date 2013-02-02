@@ -1,5 +1,5 @@
 //
-//  ANResponse.h
+//  TKResponse.h
 //  Appdate
 //
 //  Created by Brent Royal-Gordon on 9/2/12.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TKResource.h"
-#import "ANDefines.h"
+#import "TKDefines.h"
 #import "TKStreamMarker.h"
 
 @interface TKResponse : TKResource

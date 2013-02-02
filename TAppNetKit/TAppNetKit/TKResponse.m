@@ -1,5 +1,5 @@
 //
-//  ANResponse.m
+//  TKResponse.m
 //  Appdate
 //
 //  Created by Brent Royal-Gordon on 9/2/12.

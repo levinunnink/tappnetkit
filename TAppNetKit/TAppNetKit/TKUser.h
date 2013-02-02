@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "TKIdentifiedResource.h"
-#import "ANCompletions.h"
-#import "AppNetKit.h"
+#import "TKCompletions.h"
+#import "TAppNetKit.h"
 #import "TKUserDescription.h"
 #import "TKImage.h"
 #import "TKUserCounts.h"

@@ -9,11 +9,11 @@
 #import "TKResource.h"
 #import "ISO8601DateFormatter.h"
 #import "TKSession.h"
-#import "ANSession+ANResource_Private.h"
+#import "TKSession+TKResource_Private.h"
 
 #import "NSObject+AssociatedObject.h"
 
-NSString * const ANResourceDidUpdateNotification = @"ANResourceDidUpdate";
+NSString * const TKResourceDidUpdateNotification = @"TKResourceDidUpdate";
 
 @implementation TKResource
 
@@ -65,7 +65,7 @@ NSString * const ANResourceDidUpdateNotification = @"ANResourceDidUpdate";
         
     [self didChangeValueForKey:@"representation"];
     
-    NSNotification * note = [NSNotification notificationWithName:ANResourceDidUpdateNotification object:self];
+    NSNotification * note = [NSNotification notificationWithName:TKResourceDidUpdateNotification object:self];
     [NSNotificationQueue.defaultQueue enqueueNotification:note postingStyle:NSPostASAP coalesceMask:NSNotificationCoalescingOnName|NSNotificationCoalescingOnSender forModes:nil];
 }
 

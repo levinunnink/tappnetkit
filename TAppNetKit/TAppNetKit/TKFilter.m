@@ -7,7 +7,7 @@
 //
 
 #import "TKFilter.h"
-#import "ANSession+Requests.h"
+#import "TKSession+Requests.h"
 
 @implementation TKFilter
 
