@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B8333D416BCE947005F7102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D316BCE947005F7102 /* UIKit.framework */; };
+		6B8333D616BCE947005F7102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D516BCE947005F7102 /* Foundation.framework */; };
+		6B8333D816BCE947005F7102 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D716BCE947005F7102 /* CoreGraphics.framework */; };
+		6B8333DE16BCE947005F7102 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B8333DC16BCE947005F7102 /* InfoPlist.strings */; };
+		6B8333E016BCE947005F7102 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8333DF16BCE947005F7102 /* main.m */; };
+		6B8333E416BCE947005F7102 /* TAPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8333E316BCE947005F7102 /* TAPAppDelegate.m */; };
+		6B8333E616BCE947005F7102 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B8333E516BCE947005F7102 /* Default.png */; };
+		6B8333E816BCE947005F7102 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B8333E716BCE947005F7102 /* Default@2x.png */; };
+		6B8333EA16BCE947005F7102 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B8333E916BCE947005F7102 /* Default-568h@2x.png */; };
+		6B8333F216BCE947005F7102 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333F116BCE947005F7102 /* SenTestingKit.framework */; };
+		6B8333F316BCE947005F7102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D316BCE947005F7102 /* UIKit.framework */; };
+		6B8333F416BCE947005F7102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8333D516BCE947005F7102 /* Foundation.framework */; };
+		6B8333FC16BCE947005F7102 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B8333FA16BCE947005F7102 /* InfoPlist.strings */; };
+		6B8333FF16BCE947005F7102 /* TAppNetKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8333FE16BCE947005F7102 /* TAppNetKitTests.m */; };
+		6B83348916BCE966005F7102 /* _TKIdentifiedResourceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83340916BCE966005F7102 /* _TKIdentifiedResourceSet.m */; };
+		6B83348A16BCE966005F7102 /* TKAccessTokenInformationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83340B16BCE966005F7102 /* TKAccessTokenInformationRequest.m */; };
+		6B83348B16BCE966005F7102 /* TKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83340D16BCE966005F7102 /* TKAnnotation.m */; };
+		6B83348C16BCE966005F7102 /* TKAuthenticatedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83340F16BCE966005F7102 /* TKAuthenticatedRequest.m */; };
+		6B83348D16BCE966005F7102 /* TKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83341116BCE966005F7102 /* TKAuthenticator.m */; };
+		6B83348E16BCE966005F7102 /* TKCreateFilterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83341416BCE966005F7102 /* TKCreateFilterRequest.m */; };
+		6B83348F16BCE966005F7102 /* TKCreatePostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83341616BCE966005F7102 /* TKCreatePostRequest.m */; };
+		6B83349016BCE966005F7102 /* TKDeleteFilterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83341916BCE966005F7102 /* TKDeleteFilterRequest.m */; };
+		6B83349116BCE966005F7102 /* TKDeleteFiltersForUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83341B16BCE966005F7102 /* TKDeleteFiltersForUserRequest.m */; };
+		6B83349216BCE966005F7102 /* TKDeletePostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83341D16BCE966005F7102 /* TKDeletePostRequest.m */; };
+		6B83349316BCE966005F7102 /* TKDraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83341F16BCE966005F7102 /* TKDraft.m */; };
+		6B83349416BCE966005F7102 /* TKEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342116BCE966005F7102 /* TKEntity.m */; };
+		6B83349516BCE966005F7102 /* TKFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342316BCE966005F7102 /* TKFilter.m */; };
+		6B83349616BCE966005F7102 /* TKFilterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342516BCE966005F7102 /* TKFilterRequest.m */; };
+		6B83349716BCE966005F7102 /* TKFiltersForCurrentUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342716BCE966005F7102 /* TKFiltersForCurrentUserRequest.m */; };
+		6B83349816BCE966005F7102 /* TKFollowersForUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342916BCE966005F7102 /* TKFollowersForUserRequest.m */; };
+		6B83349916BCE966005F7102 /* TKFollowingsForUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342B16BCE966005F7102 /* TKFollowingsForUserRequest.m */; };
+		6B83349A16BCE966005F7102 /* TKFollowUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342D16BCE966005F7102 /* TKFollowUserRequest.m */; };
+		6B83349B16BCE966005F7102 /* TKIdentifiedResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83342F16BCE966005F7102 /* TKIdentifiedResource.m */; };
+		6B83349C16BCE966005F7102 /* TKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343116BCE966005F7102 /* TKImage.m */; };
+		6B83349D16BCE966005F7102 /* TKMuteUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343316BCE966005F7102 /* TKMuteUserRequest.m */; };
+		6B83349E16BCE966005F7102 /* TKMutingsForUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343516BCE966005F7102 /* TKMutingsForUserRequest.m */; };
+		6B83349F16BCE966005F7102 /* TKPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343716BCE966005F7102 /* TKPost.m */; };
+		6B8334A016BCE966005F7102 /* TKPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343916BCE966005F7102 /* TKPostRequest.m */; };
+		6B8334A116BCE966005F7102 /* TKPostsByUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343B16BCE966005F7102 /* TKPostsByUserRequest.m */; };
+		6B8334A216BCE966005F7102 /* TKPostsInGlobalStreamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343D16BCE966005F7102 /* TKPostsInGlobalStreamRequest.m */; };
+		6B8334A316BCE966005F7102 /* TKPostsInUserStreamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83343F16BCE966005F7102 /* TKPostsInUserStreamRequest.m */; };
+		6B8334A416BCE966005F7102 /* TKPostsInUserUnifiedStreamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344116BCE966005F7102 /* TKPostsInUserUnifiedStreamRequest.m */; };
+		6B8334A516BCE966005F7102 /* TKPostsMentioningUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344316BCE966005F7102 /* TKPostsMentioningUserRequest.m */; };
+		6B8334A616BCE966005F7102 /* TKPostsReplyingToPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344516BCE966005F7102 /* TKPostsReplyingToPostRequest.m */; };
+		6B8334A716BCE966005F7102 /* TKPostsStarredByUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344716BCE966005F7102 /* TKPostsStarredByUserRequest.m */; };
+		6B8334A816BCE966005F7102 /* TKPostsWithTagRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344916BCE966005F7102 /* TKPostsWithTagRequest.m */; };
+		6B8334A916BCE966005F7102 /* TKRepostPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344B16BCE966005F7102 /* TKRepostPostRequest.m */; };
+		6B8334AA16BCE966005F7102 /* TKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344D16BCE966005F7102 /* TKRequest.m */; };
+		6B8334AB16BCE966005F7102 /* TKRequestReturningPostList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83344F16BCE966005F7102 /* TKRequestReturningPostList.m */; };
+		6B8334AC16BCE966005F7102 /* TKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83345116BCE966005F7102 /* TKResource.m */; };
+		6B8334AD16BCE966005F7102 /* TKResource+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83345316BCE966005F7102 /* TKResource+Magic.m */; };
+		6B8334AF16BCE966005F7102 /* TKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83345716BCE966005F7102 /* TKSession.m */; };
+		6B8334B016BCE966005F7102 /* TKSession+Requests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83345A16BCE966005F7102 /* TKSession+Requests.m */; };
+		6B8334B116BCE966005F7102 /* TKSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83345C16BCE966005F7102 /* TKSource.m */; };
+		6B8334B216BCE966005F7102 /* TKStarPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83345E16BCE966005F7102 /* TKStarPostRequest.m */; };
+		6B8334B316BCE966005F7102 /* TKStreamMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346016BCE966005F7102 /* TKStreamMarker.m */; };
+		6B8334B416BCE966005F7102 /* TKUnfollowUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346216BCE966005F7102 /* TKUnfollowUserRequest.m */; };
+		6B8334B516BCE966005F7102 /* TKUnmuteUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346416BCE966005F7102 /* TKUnmuteUserRequest.m */; };
+		6B8334B616BCE966005F7102 /* TKUnrepostPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346616BCE966005F7102 /* TKUnrepostPostRequest.m */; };
+		6B8334B716BCE966005F7102 /* TKUnstarPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346816BCE966005F7102 /* TKUnstarPostRequest.m */; };
+		6B8334B816BCE966005F7102 /* TKUpdateFilterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346A16BCE966005F7102 /* TKUpdateFilterRequest.m */; };
+		6B8334B916BCE966005F7102 /* TKUpdateStreamMarkerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346C16BCE966005F7102 /* TKUpdateStreamMarkerRequest.m */; };
+		6B8334BA16BCE966005F7102 /* TKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83346E16BCE966005F7102 /* TKUser.m */; };
+		6B8334BB16BCE966005F7102 /* TKUserCounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347016BCE966005F7102 /* TKUserCounts.m */; };
+		6B8334BC16BCE966005F7102 /* TKUserDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347216BCE966005F7102 /* TKUserDescription.m */; };
+		6B8334BD16BCE966005F7102 /* TKUsernameRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347416BCE966005F7102 /* TKUsernameRequest.m */; };
+		6B8334BE16BCE966005F7102 /* TKUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347616BCE966005F7102 /* TKUserRequest.m */; };
+		6B8334BF16BCE966005F7102 /* TKUsersMatchingSearchQueryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347816BCE966005F7102 /* TKUsersMatchingSearchQueryRequest.m */; };
+		6B8334C016BCE966005F7102 /* TKUsersWithPostRepostedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347A16BCE966005F7102 /* TKUsersWithPostRepostedRequest.m */; };
+		6B8334C116BCE966005F7102 /* TKUsersWithPostStarredRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347C16BCE966005F7102 /* TKUsersWithPostStarredRequest.m */; };
+		6B8334C216BCE966005F7102 /* TAppNetKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83347E16BCE966005F7102 /* TAppNetKit.m */; };
+		6B8334C316BCE966005F7102 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83348016BCE966005F7102 /* ISO8601DateFormatter.m */; };
+		6B8334C416BCE966005F7102 /* NSDictionary+dictionaryWithObjectsForKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83348216BCE966005F7102 /* NSDictionary+dictionaryWithObjectsForKeys.m */; };
+		6B8334C516BCE966005F7102 /* NSDictionary+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83348416BCE966005F7102 /* NSDictionary+Parameters.m */; };
+		6B8334C616BCE966005F7102 /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83348616BCE966005F7102 /* NSObject+AssociatedObject.m */; };
+		6B8334C716BCE966005F7102 /* NSString+AppNetExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83348816BCE966005F7102 /* NSString+AppNetExtensions.m */; };
+		6B8334CA16BCF10D005F7102 /* TKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8334C916BCF10C005F7102 /* TKResponse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B8333F516BCE947005F7102 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B8333C616BCE947005F7102 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B8333CE16BCE947005F7102;
+			remoteInfo = TAppNetKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B8333CF16BCE947005F7102 /* TAppNetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAppNetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8333D316BCE947005F7102 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B8333D516BCE947005F7102 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B8333D716BCE947005F7102 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B8333DB16BCE947005F7102 /* TAppNetKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAppNetKit-Info.plist"; sourceTree = "<group>"; };
+		6B8333DD16BCE947005F7102 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B8333DF16BCE947005F7102 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B8333E116BCE947005F7102 /* TAppNetKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAppNetKit-Prefix.pch"; sourceTree = "<group>"; };
+		6B8333E216BCE947005F7102 /* TAPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAPAppDelegate.h; sourceTree = "<group>"; };
+		6B8333E316BCE947005F7102 /* TAPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAPAppDelegate.m; sourceTree = "<group>"; };
+		6B8333E516BCE947005F7102 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6B8333E716BCE947005F7102 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6B8333E916BCE947005F7102 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6B8333F016BCE947005F7102 /* TAppNetKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAppNetKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8333F116BCE947005F7102 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6B8333F916BCE947005F7102 /* TAppNetKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAppNetKitTests-Info.plist"; sourceTree = "<group>"; };
+		6B8333FB16BCE947005F7102 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B8333FD16BCE947005F7102 /* TAppNetKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAppNetKitTests.h; sourceTree = "<group>"; };
+		6B8333FE16BCE947005F7102 /* TAppNetKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAppNetKitTests.m; sourceTree = "<group>"; };
+		6B83340816BCE966005F7102 /* _TKIdentifiedResourceSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TKIdentifiedResourceSet.h; sourceTree = "<group>"; };
+		6B83340916BCE966005F7102 /* _TKIdentifiedResourceSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TKIdentifiedResourceSet.m; sourceTree = "<group>"; };
+		6B83340A16BCE966005F7102 /* TKAccessTokenInformationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAccessTokenInformationRequest.h; sourceTree = "<group>"; };
+		6B83340B16BCE966005F7102 /* TKAccessTokenInformationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAccessTokenInformationRequest.m; sourceTree = "<group>"; };
+		6B83340C16BCE966005F7102 /* TKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAnnotation.h; sourceTree = "<group>"; };
+		6B83340D16BCE966005F7102 /* TKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAnnotation.m; sourceTree = "<group>"; };
+		6B83340E16BCE966005F7102 /* TKAuthenticatedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAuthenticatedRequest.h; sourceTree = "<group>"; };
+		6B83340F16BCE966005F7102 /* TKAuthenticatedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAuthenticatedRequest.m; sourceTree = "<group>"; };
+		6B83341016BCE966005F7102 /* TKAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAuthenticator.h; sourceTree = "<group>"; };
+		6B83341116BCE966005F7102 /* TKAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAuthenticator.m; sourceTree = "<group>"; };
+		6B83341216BCE966005F7102 /* ANCompletions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCompletions.h; sourceTree = "<group>"; };
+		6B83341316BCE966005F7102 /* TKCreateFilterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreateFilterRequest.h; sourceTree = "<group>"; };
+		6B83341416BCE966005F7102 /* TKCreateFilterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreateFilterRequest.m; sourceTree = "<group>"; };
+		6B83341516BCE966005F7102 /* TKCreatePostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreatePostRequest.h; sourceTree = "<group>"; };
+		6B83341616BCE966005F7102 /* TKCreatePostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreatePostRequest.m; sourceTree = "<group>"; };
+		6B83341716BCE966005F7102 /* TKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDefines.h; sourceTree = "<group>"; };
+		6B83341816BCE966005F7102 /* TKDeleteFilterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDeleteFilterRequest.h; sourceTree = "<group>"; };
+		6B83341916BCE966005F7102 /* TKDeleteFilterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDeleteFilterRequest.m; sourceTree = "<group>"; };
+		6B83341A16BCE966005F7102 /* TKDeleteFiltersForUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDeleteFiltersForUserRequest.h; sourceTree = "<group>"; };
+		6B83341B16BCE966005F7102 /* TKDeleteFiltersForUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDeleteFiltersForUserRequest.m; sourceTree = "<group>"; };
+		6B83341C16BCE966005F7102 /* TKDeletePostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDeletePostRequest.h; sourceTree = "<group>"; };
+		6B83341D16BCE966005F7102 /* TKDeletePostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDeletePostRequest.m; sourceTree = "<group>"; };
+		6B83341E16BCE966005F7102 /* TKDraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDraft.h; sourceTree = "<group>"; };
+		6B83341F16BCE966005F7102 /* TKDraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDraft.m; sourceTree = "<group>"; };
+		6B83342016BCE966005F7102 /* TKEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKEntity.h; sourceTree = "<group>"; };
+		6B83342116BCE966005F7102 /* TKEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKEntity.m; sourceTree = "<group>"; };
+		6B83342216BCE966005F7102 /* TKFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFilter.h; sourceTree = "<group>"; };
+		6B83342316BCE966005F7102 /* TKFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFilter.m; sourceTree = "<group>"; };
+		6B83342416BCE966005F7102 /* TKFilterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFilterRequest.h; sourceTree = "<group>"; };
+		6B83342516BCE966005F7102 /* TKFilterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFilterRequest.m; sourceTree = "<group>"; };
+		6B83342616BCE966005F7102 /* TKFiltersForCurrentUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFiltersForCurrentUserRequest.h; sourceTree = "<group>"; };
+		6B83342716BCE966005F7102 /* TKFiltersForCurrentUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFiltersForCurrentUserRequest.m; sourceTree = "<group>"; };
+		6B83342816BCE966005F7102 /* TKFollowersForUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFollowersForUserRequest.h; sourceTree = "<group>"; };
+		6B83342916BCE966005F7102 /* TKFollowersForUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFollowersForUserRequest.m; sourceTree = "<group>"; };
+		6B83342A16BCE966005F7102 /* TKFollowingsForUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFollowingsForUserRequest.h; sourceTree = "<group>"; };
+		6B83342B16BCE966005F7102 /* TKFollowingsForUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFollowingsForUserRequest.m; sourceTree = "<group>"; };
+		6B83342C16BCE966005F7102 /* TKFollowUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFollowUserRequest.h; sourceTree = "<group>"; };
+		6B83342D16BCE966005F7102 /* TKFollowUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFollowUserRequest.m; sourceTree = "<group>"; };
+		6B83342E16BCE966005F7102 /* TKIdentifiedResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKIdentifiedResource.h; sourceTree = "<group>"; };
+		6B83342F16BCE966005F7102 /* TKIdentifiedResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKIdentifiedResource.m; sourceTree = "<group>"; };
+		6B83343016BCE966005F7102 /* TKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKImage.h; sourceTree = "<group>"; };
+		6B83343116BCE966005F7102 /* TKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImage.m; sourceTree = "<group>"; };
+		6B83343216BCE966005F7102 /* TKMuteUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMuteUserRequest.h; sourceTree = "<group>"; };
+		6B83343316BCE966005F7102 /* TKMuteUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMuteUserRequest.m; sourceTree = "<group>"; };
+		6B83343416BCE966005F7102 /* TKMutingsForUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMutingsForUserRequest.h; sourceTree = "<group>"; };
+		6B83343516BCE966005F7102 /* TKMutingsForUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMutingsForUserRequest.m; sourceTree = "<group>"; };
+		6B83343616BCE966005F7102 /* TKPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPost.h; sourceTree = "<group>"; };
+		6B83343716BCE966005F7102 /* TKPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPost.m; sourceTree = "<group>"; };
+		6B83343816BCE966005F7102 /* TKPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostRequest.h; sourceTree = "<group>"; };
+		6B83343916BCE966005F7102 /* TKPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostRequest.m; sourceTree = "<group>"; };
+		6B83343A16BCE966005F7102 /* TKPostsByUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsByUserRequest.h; sourceTree = "<group>"; };
+		6B83343B16BCE966005F7102 /* TKPostsByUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsByUserRequest.m; sourceTree = "<group>"; };
+		6B83343C16BCE966005F7102 /* TKPostsInGlobalStreamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsInGlobalStreamRequest.h; sourceTree = "<group>"; };
+		6B83343D16BCE966005F7102 /* TKPostsInGlobalStreamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsInGlobalStreamRequest.m; sourceTree = "<group>"; };
+		6B83343E16BCE966005F7102 /* TKPostsInUserStreamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsInUserStreamRequest.h; sourceTree = "<group>"; };
+		6B83343F16BCE966005F7102 /* TKPostsInUserStreamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsInUserStreamRequest.m; sourceTree = "<group>"; };
+		6B83344016BCE966005F7102 /* TKPostsInUserUnifiedStreamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsInUserUnifiedStreamRequest.h; sourceTree = "<group>"; };
+		6B83344116BCE966005F7102 /* TKPostsInUserUnifiedStreamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsInUserUnifiedStreamRequest.m; sourceTree = "<group>"; };
+		6B83344216BCE966005F7102 /* TKPostsMentioningUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsMentioningUserRequest.h; sourceTree = "<group>"; };
+		6B83344316BCE966005F7102 /* TKPostsMentioningUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsMentioningUserRequest.m; sourceTree = "<group>"; };
+		6B83344416BCE966005F7102 /* TKPostsReplyingToPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsReplyingToPostRequest.h; sourceTree = "<group>"; };
+		6B83344516BCE966005F7102 /* TKPostsReplyingToPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsReplyingToPostRequest.m; sourceTree = "<group>"; };
+		6B83344616BCE966005F7102 /* TKPostsStarredByUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsStarredByUserRequest.h; sourceTree = "<group>"; };
+		6B83344716BCE966005F7102 /* TKPostsStarredByUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsStarredByUserRequest.m; sourceTree = "<group>"; };
+		6B83344816BCE966005F7102 /* TKPostsWithTagRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPostsWithTagRequest.h; sourceTree = "<group>"; };
+		6B83344916BCE966005F7102 /* TKPostsWithTagRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPostsWithTagRequest.m; sourceTree = "<group>"; };
+		6B83344A16BCE966005F7102 /* TKRepostPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRepostPostRequest.h; sourceTree = "<group>"; };
+		6B83344B16BCE966005F7102 /* TKRepostPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRepostPostRequest.m; sourceTree = "<group>"; };
+		6B83344C16BCE966005F7102 /* TKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRequest.h; sourceTree = "<group>"; };
+		6B83344D16BCE966005F7102 /* TKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRequest.m; sourceTree = "<group>"; };
+		6B83344E16BCE966005F7102 /* TKRequestReturningPostList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRequestReturningPostList.h; sourceTree = "<group>"; };
+		6B83344F16BCE966005F7102 /* TKRequestReturningPostList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRequestReturningPostList.m; sourceTree = "<group>"; };
+		6B83345016BCE966005F7102 /* TKResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKResource.h; sourceTree = "<group>"; };
+		6B83345116BCE966005F7102 /* TKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKResource.m; sourceTree = "<group>"; };
+		6B83345216BCE966005F7102 /* TKResource+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TKResource+Magic.h"; sourceTree = "<group>"; };
+		6B83345316BCE966005F7102 /* TKResource+Magic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TKResource+Magic.m"; sourceTree = "<group>"; };
+		6B83345416BCE966005F7102 /* TKResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKResponse.h; sourceTree = "<group>"; };
+		6B83345616BCE966005F7102 /* TKSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSession.h; sourceTree = "<group>"; };
+		6B83345716BCE966005F7102 /* TKSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSession.m; sourceTree = "<group>"; };
+		6B83345816BCE966005F7102 /* TKSession+TKResource_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TKSession+TKResource_Private.h"; sourceTree = "<group>"; };
+		6B83345916BCE966005F7102 /* TKSession+Requests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TKSession+Requests.h"; sourceTree = "<group>"; };
+		6B83345A16BCE966005F7102 /* TKSession+Requests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TKSession+Requests.m"; sourceTree = "<group>"; };
+		6B83345B16BCE966005F7102 /* TKSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSource.h; sourceTree = "<group>"; };
+		6B83345C16BCE966005F7102 /* TKSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSource.m; sourceTree = "<group>"; };
+		6B83345D16BCE966005F7102 /* TKStarPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStarPostRequest.h; sourceTree = "<group>"; };
+		6B83345E16BCE966005F7102 /* TKStarPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKStarPostRequest.m; sourceTree = "<group>"; };
+		6B83345F16BCE966005F7102 /* TKStreamMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStreamMarker.h; sourceTree = "<group>"; };
+		6B83346016BCE966005F7102 /* TKStreamMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKStreamMarker.m; sourceTree = "<group>"; };
+		6B83346116BCE966005F7102 /* TKUnfollowUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUnfollowUserRequest.h; sourceTree = "<group>"; };
+		6B83346216BCE966005F7102 /* TKUnfollowUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUnfollowUserRequest.m; sourceTree = "<group>"; };
+		6B83346316BCE966005F7102 /* TKUnmuteUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUnmuteUserRequest.h; sourceTree = "<group>"; };
+		6B83346416BCE966005F7102 /* TKUnmuteUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUnmuteUserRequest.m; sourceTree = "<group>"; };
+		6B83346516BCE966005F7102 /* TKUnrepostPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUnrepostPostRequest.h; sourceTree = "<group>"; };
+		6B83346616BCE966005F7102 /* TKUnrepostPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUnrepostPostRequest.m; sourceTree = "<group>"; };
+		6B83346716BCE966005F7102 /* TKUnstarPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUnstarPostRequest.h; sourceTree = "<group>"; };
+		6B83346816BCE966005F7102 /* TKUnstarPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUnstarPostRequest.m; sourceTree = "<group>"; };
+		6B83346916BCE966005F7102 /* TKUpdateFilterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUpdateFilterRequest.h; sourceTree = "<group>"; };
+		6B83346A16BCE966005F7102 /* TKUpdateFilterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUpdateFilterRequest.m; sourceTree = "<group>"; };
+		6B83346B16BCE966005F7102 /* TKUpdateStreamMarkerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUpdateStreamMarkerRequest.h; sourceTree = "<group>"; };
+		6B83346C16BCE966005F7102 /* TKUpdateStreamMarkerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUpdateStreamMarkerRequest.m; sourceTree = "<group>"; };
+		6B83346D16BCE966005F7102 /* TKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUser.h; sourceTree = "<group>"; };
+		6B83346E16BCE966005F7102 /* TKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUser.m; sourceTree = "<group>"; };
+		6B83346F16BCE966005F7102 /* TKUserCounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUserCounts.h; sourceTree = "<group>"; };
+		6B83347016BCE966005F7102 /* TKUserCounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUserCounts.m; sourceTree = "<group>"; };
+		6B83347116BCE966005F7102 /* TKUserDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUserDescription.h; sourceTree = "<group>"; };
+		6B83347216BCE966005F7102 /* TKUserDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUserDescription.m; sourceTree = "<group>"; };
+		6B83347316BCE966005F7102 /* TKUsernameRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUsernameRequest.h; sourceTree = "<group>"; };
+		6B83347416BCE966005F7102 /* TKUsernameRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUsernameRequest.m; sourceTree = "<group>"; };
+		6B83347516BCE966005F7102 /* TKUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUserRequest.h; sourceTree = "<group>"; };
+		6B83347616BCE966005F7102 /* TKUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUserRequest.m; sourceTree = "<group>"; };
+		6B83347716BCE966005F7102 /* TKUsersMatchingSearchQueryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUsersMatchingSearchQueryRequest.h; sourceTree = "<group>"; };
+		6B83347816BCE966005F7102 /* TKUsersMatchingSearchQueryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUsersMatchingSearchQueryRequest.m; sourceTree = "<group>"; };
+		6B83347916BCE966005F7102 /* TKUsersWithPostRepostedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUsersWithPostRepostedRequest.h; sourceTree = "<group>"; };
+		6B83347A16BCE966005F7102 /* TKUsersWithPostRepostedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUsersWithPostRepostedRequest.m; sourceTree = "<group>"; };
+		6B83347B16BCE966005F7102 /* TKUsersWithPostStarredRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUsersWithPostStarredRequest.h; sourceTree = "<group>"; };
+		6B83347C16BCE966005F7102 /* TKUsersWithPostStarredRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKUsersWithPostStarredRequest.m; sourceTree = "<group>"; };
+		6B83347D16BCE966005F7102 /* TAppNetKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAppNetKit.h; sourceTree = "<group>"; };
+		6B83347E16BCE966005F7102 /* TAppNetKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAppNetKit.m; sourceTree = "<group>"; };
+		6B83347F16BCE966005F7102 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		6B83348016BCE966005F7102 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		6B83348116BCE966005F7102 /* NSDictionary+dictionaryWithObjectsForKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+dictionaryWithObjectsForKeys.h"; sourceTree = "<group>"; };
+		6B83348216BCE966005F7102 /* NSDictionary+dictionaryWithObjectsForKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+dictionaryWithObjectsForKeys.m"; sourceTree = "<group>"; };
+		6B83348316BCE966005F7102 /* NSDictionary+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Parameters.h"; sourceTree = "<group>"; };
+		6B83348416BCE966005F7102 /* NSDictionary+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Parameters.m"; sourceTree = "<group>"; };
+		6B83348516BCE966005F7102 /* NSObject+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObject.h"; sourceTree = "<group>"; };
+		6B83348616BCE966005F7102 /* NSObject+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObject.m"; sourceTree = "<group>"; };
+		6B83348716BCE966005F7102 /* NSString+AppNetExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AppNetExtensions.h"; sourceTree = "<group>"; };
+		6B83348816BCE966005F7102 /* NSString+AppNetExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AppNetExtensions.m"; sourceTree = "<group>"; };
+		6B8334C916BCF10C005F7102 /* TKResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKResponse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B8333CC16BCE947005F7102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8333D416BCE947005F7102 /* UIKit.framework in Frameworks */,
+				6B8333D616BCE947005F7102 /* Foundation.framework in Frameworks */,
+				6B8333D816BCE947005F7102 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B8333EC16BCE947005F7102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8333F216BCE947005F7102 /* SenTestingKit.framework in Frameworks */,
+				6B8333F316BCE947005F7102 /* UIKit.framework in Frameworks */,
+				6B8333F416BCE947005F7102 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B38228C16BCF51600181E35 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6B83341016BCE966005F7102 /* TKAuthenticator.h */,
+				6B83341116BCE966005F7102 /* TKAuthenticator.m */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		6B38228D16BCF56D00181E35 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6B83341216BCE966005F7102 /* ANCompletions.h */,
+				6B83341716BCE966005F7102 /* TKDefines.h */,
+				6B83345616BCE966005F7102 /* TKSession.h */,
+				6B83345716BCE966005F7102 /* TKSession.m */,
+				6B83345816BCE966005F7102 /* TKSession+TKResource_Private.h */,
+				6B83345916BCE966005F7102 /* TKSession+Requests.h */,
+				6B83345A16BCE966005F7102 /* TKSession+Requests.m */,
+				6B83347D16BCE966005F7102 /* TAppNetKit.h */,
+				6B83347E16BCE966005F7102 /* TAppNetKit.m */,
+				6B8333E216BCE947005F7102 /* TAPAppDelegate.h */,
+				6B8333E316BCE947005F7102 /* TAPAppDelegate.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		6B8333C416BCE947005F7102 = {
+			isa = PBXGroup;
+			children = (
+				6B8333D916BCE947005F7102 /* TAppNetKit */,
+				6B8333F716BCE947005F7102 /* TAppNetKitTests */,
+				6B8333D216BCE947005F7102 /* Frameworks */,
+				6B8333D016BCE947005F7102 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B8333D016BCE947005F7102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B8333CF16BCE947005F7102 /* TAppNetKit.app */,
+				6B8333F016BCE947005F7102 /* TAppNetKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B8333D216BCE947005F7102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B8333D316BCE947005F7102 /* UIKit.framework */,
+				6B8333D516BCE947005F7102 /* Foundation.framework */,
+				6B8333D716BCE947005F7102 /* CoreGraphics.framework */,
+				6B8333F116BCE947005F7102 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B8333D916BCE947005F7102 /* TAppNetKit */ = {
+			isa = PBXGroup;
+			children = (
+				6B38228D16BCF56D00181E35 /* Core */,
+				6B38228C16BCF51600181E35 /* Auth */,
+				6B8334CD16BCF330005F7102 /* Requests */,
+				6B8334CB16BCF143005F7102 /* Domain Objects */,
+				6B8334C816BCF069005F7102 /* Categories */,
+				6B8333DA16BCE947005F7102 /* Supporting Files */,
+			);
+			path = TAppNetKit;
+			sourceTree = "<group>";
+		};
+		6B8333DA16BCE947005F7102 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B8333DB16BCE947005F7102 /* TAppNetKit-Info.plist */,
+				6B8333DC16BCE947005F7102 /* InfoPlist.strings */,
+				6B8333DF16BCE947005F7102 /* main.m */,
+				6B8333E116BCE947005F7102 /* TAppNetKit-Prefix.pch */,
+				6B8333E516BCE947005F7102 /* Default.png */,
+				6B8333E716BCE947005F7102 /* Default@2x.png */,
+				6B8333E916BCE947005F7102 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B8333F716BCE947005F7102 /* TAppNetKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B8333FD16BCE947005F7102 /* TAppNetKitTests.h */,
+				6B8333FE16BCE947005F7102 /* TAppNetKitTests.m */,
+				6B8333F816BCE947005F7102 /* Supporting Files */,
+			);
+			path = TAppNetKitTests;
+			sourceTree = "<group>";
+		};
+		6B8333F816BCE947005F7102 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B8333F916BCE947005F7102 /* TAppNetKitTests-Info.plist */,
+				6B8333FA16BCE947005F7102 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B8334C816BCF069005F7102 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6B83347F16BCE966005F7102 /* ISO8601DateFormatter.h */,
+				6B83348016BCE966005F7102 /* ISO8601DateFormatter.m */,
+				6B83348116BCE966005F7102 /* NSDictionary+dictionaryWithObjectsForKeys.h */,
+				6B83348216BCE966005F7102 /* NSDictionary+dictionaryWithObjectsForKeys.m */,
+				6B83348316BCE966005F7102 /* NSDictionary+Parameters.h */,
+				6B83348416BCE966005F7102 /* NSDictionary+Parameters.m */,
+				6B83348516BCE966005F7102 /* NSObject+AssociatedObject.h */,
+				6B83348616BCE966005F7102 /* NSObject+AssociatedObject.m */,
+				6B83348716BCE966005F7102 /* NSString+AppNetExtensions.h */,
+				6B83348816BCE966005F7102 /* NSString+AppNetExtensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		6B8334CB16BCF143005F7102 /* Domain Objects */ = {
+			isa = PBXGroup;
+			children = (
+				6B83340816BCE966005F7102 /* _TKIdentifiedResourceSet.h */,
+				6B83340916BCE966005F7102 /* _TKIdentifiedResourceSet.m */,
+				6B83340C16BCE966005F7102 /* TKAnnotation.h */,
+				6B83340D16BCE966005F7102 /* TKAnnotation.m */,
+				6B83341E16BCE966005F7102 /* TKDraft.h */,
+				6B83341F16BCE966005F7102 /* TKDraft.m */,
+				6B83342016BCE966005F7102 /* TKEntity.h */,
+				6B83342116BCE966005F7102 /* TKEntity.m */,
+				6B83342216BCE966005F7102 /* TKFilter.h */,
+				6B83342316BCE966005F7102 /* TKFilter.m */,
+				6B83342E16BCE966005F7102 /* TKIdentifiedResource.h */,
+				6B83342F16BCE966005F7102 /* TKIdentifiedResource.m */,
+				6B83343016BCE966005F7102 /* TKImage.h */,
+				6B83343116BCE966005F7102 /* TKImage.m */,
+				6B83343616BCE966005F7102 /* TKPost.h */,
+				6B83343716BCE966005F7102 /* TKPost.m */,
+				6B83345016BCE966005F7102 /* TKResource.h */,
+				6B83345116BCE966005F7102 /* TKResource.m */,
+				6B83345216BCE966005F7102 /* TKResource+Magic.h */,
+				6B83345316BCE966005F7102 /* TKResource+Magic.m */,
+				6B83345416BCE966005F7102 /* TKResponse.h */,
+				6B8334C916BCF10C005F7102 /* TKResponse.m */,
+				6B83345B16BCE966005F7102 /* TKSource.h */,
+				6B83345C16BCE966005F7102 /* TKSource.m */,
+				6B83345F16BCE966005F7102 /* TKStreamMarker.h */,
+				6B83346016BCE966005F7102 /* TKStreamMarker.m */,
+				6B83346D16BCE966005F7102 /* TKUser.h */,
+				6B83346E16BCE966005F7102 /* TKUser.m */,
+				6B83346F16BCE966005F7102 /* TKUserCounts.h */,
+				6B83347016BCE966005F7102 /* TKUserCounts.m */,
+				6B83347116BCE966005F7102 /* TKUserDescription.h */,
+				6B83347216BCE966005F7102 /* TKUserDescription.m */,
+			);
+			name = "Domain Objects";
+			sourceTree = "<group>";
+		};
+		6B8334CD16BCF330005F7102 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6B83340A16BCE966005F7102 /* TKAccessTokenInformationRequest.h */,
+				6B83340B16BCE966005F7102 /* TKAccessTokenInformationRequest.m */,
+				6B83340E16BCE966005F7102 /* TKAuthenticatedRequest.h */,
+				6B83340F16BCE966005F7102 /* TKAuthenticatedRequest.m */,
+				6B83341316BCE966005F7102 /* TKCreateFilterRequest.h */,
+				6B83341416BCE966005F7102 /* TKCreateFilterRequest.m */,
+				6B83341516BCE966005F7102 /* TKCreatePostRequest.h */,
+				6B83341616BCE966005F7102 /* TKCreatePostRequest.m */,
+				6B83341816BCE966005F7102 /* TKDeleteFilterRequest.h */,
+				6B83341916BCE966005F7102 /* TKDeleteFilterRequest.m */,
+				6B83341A16BCE966005F7102 /* TKDeleteFiltersForUserRequest.h */,
+				6B83341B16BCE966005F7102 /* TKDeleteFiltersForUserRequest.m */,
+				6B83341C16BCE966005F7102 /* TKDeletePostRequest.h */,
+				6B83341D16BCE966005F7102 /* TKDeletePostRequest.m */,
+				6B83342416BCE966005F7102 /* TKFilterRequest.h */,
+				6B83342516BCE966005F7102 /* TKFilterRequest.m */,
+				6B83342616BCE966005F7102 /* TKFiltersForCurrentUserRequest.h */,
+				6B83342716BCE966005F7102 /* TKFiltersForCurrentUserRequest.m */,
+				6B83342816BCE966005F7102 /* TKFollowersForUserRequest.h */,
+				6B83342916BCE966005F7102 /* TKFollowersForUserRequest.m */,
+				6B83342A16BCE966005F7102 /* TKFollowingsForUserRequest.h */,
+				6B83342B16BCE966005F7102 /* TKFollowingsForUserRequest.m */,
+				6B83342C16BCE966005F7102 /* TKFollowUserRequest.h */,
+				6B83342D16BCE966005F7102 /* TKFollowUserRequest.m */,
+				6B83343216BCE966005F7102 /* TKMuteUserRequest.h */,
+				6B83343316BCE966005F7102 /* TKMuteUserRequest.m */,
+				6B83343416BCE966005F7102 /* TKMutingsForUserRequest.h */,
+				6B83343516BCE966005F7102 /* TKMutingsForUserRequest.m */,
+				6B83343816BCE966005F7102 /* TKPostRequest.h */,
+				6B83343916BCE966005F7102 /* TKPostRequest.m */,
+				6B83343A16BCE966005F7102 /* TKPostsByUserRequest.h */,
+				6B83343B16BCE966005F7102 /* TKPostsByUserRequest.m */,
+				6B83343C16BCE966005F7102 /* TKPostsInGlobalStreamRequest.h */,
+				6B83343D16BCE966005F7102 /* TKPostsInGlobalStreamRequest.m */,
+				6B83343E16BCE966005F7102 /* TKPostsInUserStreamRequest.h */,
+				6B83343F16BCE966005F7102 /* TKPostsInUserStreamRequest.m */,
+				6B83344016BCE966005F7102 /* TKPostsInUserUnifiedStreamRequest.h */,
+				6B83344116BCE966005F7102 /* TKPostsInUserUnifiedStreamRequest.m */,
+				6B83344216BCE966005F7102 /* TKPostsMentioningUserRequest.h */,
+				6B83344316BCE966005F7102 /* TKPostsMentioningUserRequest.m */,
+				6B83344416BCE966005F7102 /* TKPostsReplyingToPostRequest.h */,
+				6B83344516BCE966005F7102 /* TKPostsReplyingToPostRequest.m */,
+				6B83344616BCE966005F7102 /* TKPostsStarredByUserRequest.h */,
+				6B83344716BCE966005F7102 /* TKPostsStarredByUserRequest.m */,
+				6B83344816BCE966005F7102 /* TKPostsWithTagRequest.h */,
+				6B83344916BCE966005F7102 /* TKPostsWithTagRequest.m */,
+				6B83344A16BCE966005F7102 /* TKRepostPostRequest.h */,
+				6B83344B16BCE966005F7102 /* TKRepostPostRequest.m */,
+				6B83344C16BCE966005F7102 /* TKRequest.h */,
+				6B83344D16BCE966005F7102 /* TKRequest.m */,
+				6B83344E16BCE966005F7102 /* TKRequestReturningPostList.h */,
+				6B83344F16BCE966005F7102 /* TKRequestReturningPostList.m */,
+				6B83345D16BCE966005F7102 /* TKStarPostRequest.h */,
+				6B83345E16BCE966005F7102 /* TKStarPostRequest.m */,
+				6B83346116BCE966005F7102 /* TKUnfollowUserRequest.h */,
+				6B83346216BCE966005F7102 /* TKUnfollowUserRequest.m */,
+				6B83346316BCE966005F7102 /* TKUnmuteUserRequest.h */,
+				6B83346416BCE966005F7102 /* TKUnmuteUserRequest.m */,
+				6B83346516BCE966005F7102 /* TKUnrepostPostRequest.h */,
+				6B83346616BCE966005F7102 /* TKUnrepostPostRequest.m */,
+				6B83346716BCE966005F7102 /* TKUnstarPostRequest.h */,
+				6B83346816BCE966005F7102 /* TKUnstarPostRequest.m */,
+				6B83346916BCE966005F7102 /* TKUpdateFilterRequest.h */,
+				6B83346A16BCE966005F7102 /* TKUpdateFilterRequest.m */,
+				6B83346B16BCE966005F7102 /* TKUpdateStreamMarkerRequest.h */,
+				6B83346C16BCE966005F7102 /* TKUpdateStreamMarkerRequest.m */,
+				6B83347316BCE966005F7102 /* TKUsernameRequest.h */,
+				6B83347416BCE966005F7102 /* TKUsernameRequest.m */,
+				6B83347516BCE966005F7102 /* TKUserRequest.h */,
+				6B83347616BCE966005F7102 /* TKUserRequest.m */,
+				6B83347716BCE966005F7102 /* TKUsersMatchingSearchQueryRequest.h */,
+				6B83347816BCE966005F7102 /* TKUsersMatchingSearchQueryRequest.m */,
+				6B83347916BCE966005F7102 /* TKUsersWithPostRepostedRequest.h */,
+				6B83347A16BCE966005F7102 /* TKUsersWithPostRepostedRequest.m */,
+				6B83347B16BCE966005F7102 /* TKUsersWithPostStarredRequest.h */,
+				6B83347C16BCE966005F7102 /* TKUsersWithPostStarredRequest.m */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B8333CE16BCE947005F7102 /* TAppNetKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B83340216BCE947005F7102 /* Build configuration list for PBXNativeTarget "TAppNetKit" */;
+			buildPhases = (
+				6B8333CB16BCE947005F7102 /* Sources */,
+				6B8333CC16BCE947005F7102 /* Frameworks */,
+				6B8333CD16BCE947005F7102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAppNetKit;
+			productName = TAppNetKit;
+			productReference = 6B8333CF16BCE947005F7102 /* TAppNetKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B8333EF16BCE947005F7102 /* TAppNetKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B83340516BCE947005F7102 /* Build configuration list for PBXNativeTarget "TAppNetKitTests" */;
+			buildPhases = (
+				6B8333EB16BCE947005F7102 /* Sources */,
+				6B8333EC16BCE947005F7102 /* Frameworks */,
+				6B8333ED16BCE947005F7102 /* Resources */,
+				6B8333EE16BCE947005F7102 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B8333F616BCE947005F7102 /* PBXTargetDependency */,
+			);
+			name = TAppNetKitTests;
+			productName = TAppNetKitTests;
+			productReference = 6B8333F016BCE947005F7102 /* TAppNetKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B8333C616BCE947005F7102 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TAP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Culturezoo LLC";
+			};
+			buildConfigurationList = 6B8333C916BCE947005F7102 /* Build configuration list for PBXProject "TAppNetKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B8333C416BCE947005F7102;
+			productRefGroup = 6B8333D016BCE947005F7102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B8333CE16BCE947005F7102 /* TAppNetKit */,
+				6B8333EF16BCE947005F7102 /* TAppNetKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B8333CD16BCE947005F7102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8333DE16BCE947005F7102 /* InfoPlist.strings in Resources */,
+				6B8333E616BCE947005F7102 /* Default.png in Resources */,
+				6B8333E816BCE947005F7102 /* Default@2x.png in Resources */,
+				6B8333EA16BCE947005F7102 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B8333ED16BCE947005F7102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8333FC16BCE947005F7102 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B8333EE16BCE947005F7102 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B8333CB16BCE947005F7102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8333E016BCE947005F7102 /* main.m in Sources */,
+				6B8333E416BCE947005F7102 /* TAPAppDelegate.m in Sources */,
+				6B83348916BCE966005F7102 /* _TKIdentifiedResourceSet.m in Sources */,
+				6B83348A16BCE966005F7102 /* TKAccessTokenInformationRequest.m in Sources */,
+				6B83348B16BCE966005F7102 /* TKAnnotation.m in Sources */,
+				6B83348C16BCE966005F7102 /* TKAuthenticatedRequest.m in Sources */,
+				6B83348D16BCE966005F7102 /* TKAuthenticator.m in Sources */,
+				6B83348E16BCE966005F7102 /* TKCreateFilterRequest.m in Sources */,
+				6B83348F16BCE966005F7102 /* TKCreatePostRequest.m in Sources */,
+				6B83349016BCE966005F7102 /* TKDeleteFilterRequest.m in Sources */,
+				6B83349116BCE966005F7102 /* TKDeleteFiltersForUserRequest.m in Sources */,
+				6B83349216BCE966005F7102 /* TKDeletePostRequest.m in Sources */,
+				6B83349316BCE966005F7102 /* TKDraft.m in Sources */,
+				6B83349416BCE966005F7102 /* TKEntity.m in Sources */,
+				6B83349516BCE966005F7102 /* TKFilter.m in Sources */,
+				6B83349616BCE966005F7102 /* TKFilterRequest.m in Sources */,
+				6B83349716BCE966005F7102 /* TKFiltersForCurrentUserRequest.m in Sources */,
+				6B83349816BCE966005F7102 /* TKFollowersForUserRequest.m in Sources */,
+				6B83349916BCE966005F7102 /* TKFollowingsForUserRequest.m in Sources */,
+				6B83349A16BCE966005F7102 /* TKFollowUserRequest.m in Sources */,
+				6B83349B16BCE966005F7102 /* TKIdentifiedResource.m in Sources */,
+				6B83349C16BCE966005F7102 /* TKImage.m in Sources */,
+				6B83349D16BCE966005F7102 /* TKMuteUserRequest.m in Sources */,
+				6B83349E16BCE966005F7102 /* TKMutingsForUserRequest.m in Sources */,
+				6B83349F16BCE966005F7102 /* TKPost.m in Sources */,
+				6B8334A016BCE966005F7102 /* TKPostRequest.m in Sources */,
+				6B8334A116BCE966005F7102 /* TKPostsByUserRequest.m in Sources */,
+				6B8334A216BCE966005F7102 /* TKPostsInGlobalStreamRequest.m in Sources */,
+				6B8334A316BCE966005F7102 /* TKPostsInUserStreamRequest.m in Sources */,
+				6B8334A416BCE966005F7102 /* TKPostsInUserUnifiedStreamRequest.m in Sources */,
+				6B8334A516BCE966005F7102 /* TKPostsMentioningUserRequest.m in Sources */,
+				6B8334A616BCE966005F7102 /* TKPostsReplyingToPostRequest.m in Sources */,
+				6B8334A716BCE966005F7102 /* TKPostsStarredByUserRequest.m in Sources */,
+				6B8334A816BCE966005F7102 /* TKPostsWithTagRequest.m in Sources */,
+				6B8334A916BCE966005F7102 /* TKRepostPostRequest.m in Sources */,
+				6B8334AA16BCE966005F7102 /* TKRequest.m in Sources */,
+				6B8334AB16BCE966005F7102 /* TKRequestReturningPostList.m in Sources */,
+				6B8334AC16BCE966005F7102 /* TKResource.m in Sources */,
+				6B8334AD16BCE966005F7102 /* TKResource+Magic.m in Sources */,
+				6B8334AF16BCE966005F7102 /* TKSession.m in Sources */,
+				6B8334B016BCE966005F7102 /* TKSession+Requests.m in Sources */,
+				6B8334B116BCE966005F7102 /* TKSource.m in Sources */,
+				6B8334B216BCE966005F7102 /* TKStarPostRequest.m in Sources */,
+				6B8334B316BCE966005F7102 /* TKStreamMarker.m in Sources */,
+				6B8334B416BCE966005F7102 /* TKUnfollowUserRequest.m in Sources */,
+				6B8334B516BCE966005F7102 /* TKUnmuteUserRequest.m in Sources */,
+				6B8334B616BCE966005F7102 /* TKUnrepostPostRequest.m in Sources */,
+				6B8334B716BCE966005F7102 /* TKUnstarPostRequest.m in Sources */,
+				6B8334B816BCE966005F7102 /* TKUpdateFilterRequest.m in Sources */,
+				6B8334B916BCE966005F7102 /* TKUpdateStreamMarkerRequest.m in Sources */,
+				6B8334BA16BCE966005F7102 /* TKUser.m in Sources */,
+				6B8334BB16BCE966005F7102 /* TKUserCounts.m in Sources */,
+				6B8334BC16BCE966005F7102 /* TKUserDescription.m in Sources */,
+				6B8334BD16BCE966005F7102 /* TKUsernameRequest.m in Sources */,
+				6B8334BE16BCE966005F7102 /* TKUserRequest.m in Sources */,
+				6B8334BF16BCE966005F7102 /* TKUsersMatchingSearchQueryRequest.m in Sources */,
+				6B8334C016BCE966005F7102 /* TKUsersWithPostRepostedRequest.m in Sources */,
+				6B8334C116BCE966005F7102 /* TKUsersWithPostStarredRequest.m in Sources */,
+				6B8334C216BCE966005F7102 /* TAppNetKit.m in Sources */,
+				6B8334C316BCE966005F7102 /* ISO8601DateFormatter.m in Sources */,
+				6B8334C416BCE966005F7102 /* NSDictionary+dictionaryWithObjectsForKeys.m in Sources */,
+				6B8334C516BCE966005F7102 /* NSDictionary+Parameters.m in Sources */,
+				6B8334C616BCE966005F7102 /* NSObject+AssociatedObject.m in Sources */,
+				6B8334C716BCE966005F7102 /* NSString+AppNetExtensions.m in Sources */,
+				6B8334CA16BCF10D005F7102 /* TKResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B8333EB16BCE947005F7102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8333FF16BCE947005F7102 /* TAppNetKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B8333F616BCE947005F7102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B8333CE16BCE947005F7102 /* TAppNetKit */;
+			targetProxy = 6B8333F516BCE947005F7102 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B8333DC16BCE947005F7102 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B8333DD16BCE947005F7102 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B8333FA16BCE947005F7102 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B8333FB16BCE947005F7102 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B83340016BCE947005F7102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B83340116BCE947005F7102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B83340316BCE947005F7102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAppNetKit/TAppNetKit-Prefix.pch";
+				INFOPLIST_FILE = "TAppNetKit/TAppNetKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B83340416BCE947005F7102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAppNetKit/TAppNetKit-Prefix.pch";
+				INFOPLIST_FILE = "TAppNetKit/TAppNetKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6B83340616BCE947005F7102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAppNetKit.app/TAppNetKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAppNetKit/TAppNetKit-Prefix.pch";
+				INFOPLIST_FILE = "TAppNetKitTests/TAppNetKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6B83340716BCE947005F7102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAppNetKit.app/TAppNetKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAppNetKit/TAppNetKit-Prefix.pch";
+				INFOPLIST_FILE = "TAppNetKitTests/TAppNetKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B8333C916BCE947005F7102 /* Build configuration list for PBXProject "TAppNetKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B83340016BCE947005F7102 /* Debug */,
+				6B83340116BCE947005F7102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B83340216BCE947005F7102 /* Build configuration list for PBXNativeTarget "TAppNetKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B83340316BCE947005F7102 /* Debug */,
+				6B83340416BCE947005F7102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B83340516BCE947005F7102 /* Build configuration list for PBXNativeTarget "TAppNetKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B83340616BCE947005F7102 /* Debug */,
+				6B83340716BCE947005F7102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B8333C616BCE947005F7102 /* Project object */;
+}
